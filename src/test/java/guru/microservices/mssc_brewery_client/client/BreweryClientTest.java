@@ -26,4 +26,13 @@ public class BreweryClientTest {
         URI response = breweryClient.saveNewBeer(beerDTO);
         assertNotNull(response);
     }
+    @Test
+    void updateBeer() {
+        BeerDTO beerDTO = BeerDTO.builder().beerName("New Beer").build();
+        breweryClient.updateBeer(UUID.randomUUID(), beerDTO);
+    }
+    @Test
+    void deleteBeer() {
+        breweryClient.deleteBeer(UUID.randomUUID());
+    }
 }
