@@ -11,7 +11,7 @@ import java.util.UUID;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-public class BreweryClientTest {
+class BreweryClientTest {
 
     @Autowired
     BreweryClient breweryClient;
